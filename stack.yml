@@ -1,0 +1,8 @@
+name: mongodb
+title: MongoDB
+icon: mongodb
+
+services:
+- name: mongodb
+  title: MongoDB
+  service: mongodb

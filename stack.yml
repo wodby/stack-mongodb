@@ -6,3 +6,11 @@ services:
 - name: mongodb
   title: MongoDB
   service: mongodb
+
+- name: mongoku
+  title: Mongoku
+  service: mongoku
+  disabled: true
+  links:
+  - name: db
+    service: mongodb

@@ -1,6 +1,7 @@
 # MongoDB application stack for Kubernetes on Wodby
 
-Deploy MongoDB applications on Kubernetes with Wodby.
+Deploy MongoDB applications on Kubernetes with Wodby, with an optional
+browser-based Mongoku administration interface.
 
 This repository defines the Wodby stack manifest and default service
 composition for MongoDB.
@@ -13,12 +14,14 @@ composition for MongoDB.
 ## Service definition
 
 - [MongoDB service on Wodby](https://wodby.com/services/mongodb)
+- [Mongoku service on Wodby](https://wodby.com/services/mongoku)
 
 ## What's included
 
 | Component / service | Default configuration |
 | --- | --- |
 | MongoDB<br>`mongodb` | optional; enabled by default; volumes: `data` 10 GB |
+| Mongoku<br>`mongoku` | optional; disabled by default; link: `db` → `mongodb` |
 
 Enabled optional services are selected by default but can be excluded when an
 app is created. Required services cannot be excluded.
